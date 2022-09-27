@@ -1,5 +1,6 @@
-print ("¿Cuánto es la raíz cuadrada de 144?:")
+puntuacion=0
 
+print ("¿Cuánto es la raíz cuadrada de 144?:")
 print ("a) 12")
 print ("b) 14")
 print ("c) 16")
@@ -9,9 +10,39 @@ respuesta = input("Respuesta: ")
 print ()
 
 if respuesta=="a":
-	print("¡Respuesta correcta!")
+	puntuacion += 10
 else:
-	print("¡Respuesta incorrecta!")
+	puntuacion -= 5
+	
+print ("¿Cuál es la capital de Madagascar?:")
+print ("a) Ankara")
+print ("b) Antananarivo")
+print ("c) Atenas")
+
+print()
+respuesta = input("Respuesta: ")
+print ()
+
+if respuesta=="b":
+	puntuacion += 10
+else:
+	puntuacion -= 5
+	
+print ("¿Cuándo acabó la Segunda Guerra Mundial?:")
+print ("a) 1939")
+print ("b) 1941")
+print ("c) 1945")
+
+print()
+respuesta = input("Respuesta: ")
+print ()
+
+if respuesta=="c":
+	puntuacion += 10
+else:
+	puntuacion -= 5
+	
+print ("Puntuacion Total:", puntuacion)
 	
 
 
