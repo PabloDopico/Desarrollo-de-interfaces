@@ -8,7 +8,7 @@ print()
 respuesta = input("Respuesta: ")
 print ()
 
-if respuesta==str(12):
+if respuesta=="a":
 	print("¡Respuesta correcta!")
 else:
 	print("¡Respuesta incorrecta!")
