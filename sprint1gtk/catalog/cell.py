@@ -20,7 +20,7 @@ class Cell(Gtk.EventBox):
         self.add(box)
         self.connect("button-release-event", self.on_click)
 
-
+#
     def on_click(self,name,image,description):
 
         print("Se ha clicado la celda de " + self.name)
