@@ -54,3 +54,5 @@ class LoadWindow(Gtk.Window):
             result.append({"name": name, "description": description,
                            "gtk_image": image})  ## añadimos los valores almacenados a un diccionario en la lista shutil
         GLib.idle_add(self.start_main_window, result)
+
+        self.set_position(Gtk.WindowPosition.CENTER)

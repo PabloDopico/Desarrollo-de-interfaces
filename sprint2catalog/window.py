@@ -29,3 +29,5 @@ class MainWindow(Gtk.Window):  ## declaramos una ventana principal, cuya supercl
         for item in data_source:
             cell = Cell(item.get("name"), item.get("gtk_image"), item.get("description"))
             self.flowbox.add(cell)
+
+        self.set_position(Gtk.WindowPosition.CENTER)

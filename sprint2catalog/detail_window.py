@@ -1,4 +1,5 @@
 import gi
+import self
 
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
@@ -14,3 +15,5 @@ class DetailWindow(Gtk.Window):
         box.pack_start(label, True, True, 0)  ## añadimos el titulo,imagen y descripcion enviadas desde cell.py
         box.pack_start(image, True, True, 0)
         box.pack_start(label2, True, True, 0)
+
+        self.set_position(Gtk.WindowPosition.CENTER)

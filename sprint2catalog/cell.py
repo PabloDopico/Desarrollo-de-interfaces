@@ -30,7 +30,7 @@ class Cell(Gtk.EventBox):
         image.set_from_pixbuf(self.image.get_pixbuf())  ## establecemos en la variable image la imagen obtenida mediante pixbuf
 
 
-        label.set_text(self.name)
+        label.set_text(self.name)  ## establecemos el nombre y descripcion del json en las etiquetas de detailwindow
         label2.set_text(self.description)
 
         print("Se ha clicado la celda de " + self.name)  ## indicamos que celda ha clicado el usuario
