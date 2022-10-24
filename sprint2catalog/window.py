@@ -8,7 +8,7 @@ from cell import Cell
 class MainWindow(Gtk.Window):  ## declaramos una ventana principal, cuya superclase es Gtk.Window
     flowbox = Gtk.FlowBox()  ## declaramos e inicializamos un componente FlowBox, para añadir elementos y reposicionarlos de acuerdo al tamaño disponible
 
-    def __init__(self,data_source):
+    def __init__(self, data_source):
         super().__init__(title="Catálogo")  ## titulo de la ventana
         self.connect("destroy", Gtk.main_quit)
         self.set_border_width(15)  ## declaramos la anchura del borde
@@ -27,5 +27,5 @@ class MainWindow(Gtk.Window):  ## declaramos una ventana principal, cuya supercl
         self.add(scrolled)
 
         for item in data_source:
-            cell = Cell(item.get("name"), item.get("gtk_image"))
+            cell = Cell(item.get("name"), item.get("gtk_image"), item.get("description"))
             self.flowbox.add(cell)
