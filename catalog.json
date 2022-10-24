@@ -10,12 +10,12 @@
     "image_url": "https://raw.githubusercontent.com/PabloDopico/Desarrollo-de-interfaces/main/API-REST/conejoEdit.png"    
   },
   {
-   "name": "Perro",
+    "name": "Perro",
     "description": "Mamífero carnívoro doméstico de la familia de los cánidos que se caracteriza por tener los sentidos del olfato y el oído muy finos, y por su fidelidad al ser humano, que lo ha domesticado desde tiempos prehistóricos; existen muchas razas y de características muy diversas.",
     "image_url": "https://raw.githubusercontent.com/PabloDopico/Desarrollo-de-interfaces/main/API-REST/perroEdit.png"    
   },
   {
-   "name": "Pingüino",
+    "name": "Pingüino",
     "description": "Los pingüinos son las únicas aves vivientes no voladoras adaptadas al buceo propulsado por las alas. Por ello, sus alas se han convertido en aletas con huesos fuertemente comprimidos y articulaciones rígidas que impiden el movimiento independiente de los huesos del ala",
     "image_url": "https://raw.githubusercontent.com/PabloDopico/Desarrollo-de-interfaces/main/API-REST/pinguinoEdit.png"
   },
