@@ -18,7 +18,7 @@ public class CatalogActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_catalog);  // establecemos el layout xml de la clase
 
-        Intent intent = new Intent(this, DetailActivity.class);  // asignamos la clase DetailActivity en el intent
+        Intent intent = new Intent(this, DetailActivity.class);  // asignamos la clase DetailActivity al intent
         buttonDetalles = findViewById(R.id.ButtonDetalle);  // asignamos el Button del xml al butón creado en esta clase
 
         buttonDetalles.setOnClickListener(new View.OnClickListener() {  // indicamos lo que debe hacer al pulsar el boton
