@@ -15,6 +15,7 @@ public class MainAdapter extends RecyclerView.Adapter <MainViewHolder>{
     private Activity activity;
 
 
+
     public MainAdapter(List<AnimalData> dataSet, Activity activity){
         this.allTheData=dataSet;
         this.activity =activity;

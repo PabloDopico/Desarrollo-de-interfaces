@@ -1,6 +1,8 @@
 package com.example.mainactivity;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.view.View;
@@ -20,17 +22,25 @@ public class MainViewHolder extends RecyclerView.ViewHolder {
     private final TextView textView;
     private final ImageView imageView;
 
-    public MainViewHolder(@NonNull View itemView){
+    public MainViewHolder(@NonNull View itemView) {
         super(itemView);
         textView = (TextView) itemView.findViewById(R.id.animal_name_text_view);
-        imageView= (ImageView) itemView.findViewById(R.id.animal_image_view);
+        imageView = (ImageView) itemView.findViewById(R.id.animal_image_view);
+        itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Context context = view.getContext();
+                Intent intent = new Intent(context, DetailActivity.class);
+                context.startActivity(intent);
+            }
+        });
     }
+
 
     public void showData(AnimalData data, Activity activity){
         textView.setText(data.getName());
         loadImage(data.getImageUrl(), activity);
     }
-
 
     private void loadImage(String imageUrl, Activity activity) {
 

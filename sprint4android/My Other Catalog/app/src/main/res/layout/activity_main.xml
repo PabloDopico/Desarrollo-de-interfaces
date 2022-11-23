@@ -16,6 +16,6 @@
         tools:layout_editor_absoluteY="1dp"
         android:id="@+id/recycler_view"
         android:paddingBottom="?attr/actionBarSize"
-        android:clipToPadding="false"/>
+        android:clipToPadding="true"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
